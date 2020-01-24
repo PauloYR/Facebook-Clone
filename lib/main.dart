@@ -1,3 +1,4 @@
+import 'package:facebook_clone/pages/Groups.dart';
 import 'package:facebook_clone/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
               ),
               body: TabBarView(children: [
                 Home(),
-                Icon(Icons.supervised_user_circle),
+                Groups(),
                 Icon(Icons.store),
                 Icon(Icons.perm_identity),
                 Icon(Icons.notifications),
