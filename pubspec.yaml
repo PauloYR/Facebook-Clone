@@ -45,7 +45,11 @@ flutter:
    - images/chatbot.svg
    - images/messenger.svg
    - images/profile_facebook.jpeg
-
+   - images/more.svg
+   - images/like.svg
+   - images/comment.svg
+   - images/share.svg
+   - images/heart.svg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
