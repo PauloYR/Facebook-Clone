@@ -4,6 +4,7 @@ class PostFast extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+        color: Colors.white,
         padding: EdgeInsets.all(10),
         child: Row(
           children: <Widget>[

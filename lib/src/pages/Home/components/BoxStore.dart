@@ -1,4 +1,3 @@
-
 import 'package:facebook_clone/src/model/Store.dart';
 import 'package:flutter/material.dart';
 
@@ -10,13 +9,15 @@ class BoxStore extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(top: 6.0, bottom: 6.0),
       height: 160.0,
+      color: Colors.white,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: list.length,
-          itemBuilder: (context, position) {    
-           return Container(
+          itemBuilder: (context, position) {
+            return Container(
               child: Padding(
-                padding: EdgeInsets.only(right: 10.0, left: position == 0 ? 10.0 : 0.0),
+                padding: EdgeInsets.only(
+                    right: 10.0, left: position == 0 ? 10.0 : 0.0),
                 child: Container(
                   width: 100.0,
                   height: 160.0,
@@ -54,7 +55,7 @@ class BoxStore extends StatelessWidget {
 
   void addList() {
     list.add(Store(
-        "Adicione seu Story",
+        "Adicionar ao story",
         "https://img.freepik.com/fotos-gratis/arvore-3d-contra-um-ceu-do-por-do-sol_1048-9754.jpg?size=626&ext=jpg",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7s818WCafFEXmF7hEz1WVPKD_OKJp9WzC0_OMY9NdRjmxZheZTA&s"));
     list.add(Store(

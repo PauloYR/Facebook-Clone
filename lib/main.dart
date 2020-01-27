@@ -1,7 +1,8 @@
+import 'package:facebook_clone/my-colors.dart';
 import 'package:facebook_clone/src/pages/Groups/index.dart';
 import 'package:facebook_clone/src/pages/Home/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
 void main() => runApp(MyApp());
@@ -26,15 +27,23 @@ class MyApp extends StatelessWidget {
                               fontSize: 27.0),
                         ),
                         flex: 1),
-                    Padding(
-                      child: Icon(Icons.search, color: Colors.grey),
-                      padding: EdgeInsets.only(right: 20),
-                    ),
-                    SvgPicture.asset(
-                      'images/messenger.svg',
-                      height: 21.0,
-                      width: 21.0,
-                      color: Colors.grey,
+                     Padding(
+                       padding: EdgeInsets.only(right: 8.0),
+                       child:Container(
+                          padding: EdgeInsets.all(7.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: MyColors.cinza
+                          ),
+                        child: Icon(FontAwesomeIcons.search, size: 19,color: Colors.black,),
+                    )),
+                    Container(
+                      padding: EdgeInsets.all(7.0),
+                      decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: MyColors.cinza
+                          ),
+                      child:  Icon(FontAwesomeIcons.facebookMessenger,size: 19,color: Colors.black,),
                     )
                   ],
                 ),
@@ -47,9 +56,9 @@ class MyApp extends StatelessWidget {
                     labelColor: Colors.blue,
                     tabs: [
                       Tab(icon: Icon(Icons.home)),
-                      Tab(icon: Icon(Icons.supervised_user_circle)),
-                      Tab(icon: Icon(Icons.store)),
-                      Tab(icon: Icon(Icons.perm_identity)),
+                      Tab(icon: Icon(FontAwesomeIcons.users,size: 19,)),
+                      Tab(icon: Icon(FontAwesomeIcons.store,size: 19,)),
+                      Tab(icon: Icon(FontAwesomeIcons.userCircle,)),
                       Tab(icon: Icon(Icons.notifications)),
                       Tab(icon: Icon(Icons.menu)),
                     ]),
@@ -58,7 +67,7 @@ class MyApp extends StatelessWidget {
                 Home(),
                 Groups(),
                 Icon(Icons.store),
-                Icon(Icons.perm_identity),
+                Icon(FontAwesomeIcons.search),
                 Icon(Icons.notifications),
                 Icon(Icons.menu),
               ]),
