@@ -1,8 +1,8 @@
+import 'package:facebook_clone/src/pages/Groups/index.dart';
 import 'package:facebook_clone/src/pages/Home/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import 'src/pages/Grops/index.dart';
 
 void main() => runApp(MyApp());
 

@@ -50,6 +50,11 @@ flutter:
    - images/comment.svg
    - images/share.svg
    - images/heart.svg
+   - images/group.svg
+   - images/plus.svg
+   - images/gear.svg
+   - images/compass.svg
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
